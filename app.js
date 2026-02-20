@@ -92,6 +92,23 @@ function showFormError(input, btn, message) {
     }
 }
 
+// Fetch waitlist count
+async function fetchWaitlistCount() {
+    try {
+        const res = await fetch(`${API_URL}/waitlist/`);
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data.count >= 100) {
+            const text = `${data.count}+ founders already on the list`;
+            document.querySelectorAll('.waitlist-count').forEach(el => {
+                el.textContent = text;
+                el.style.display = 'block';
+            });
+        }
+    } catch { /* silent */ }
+}
+fetchWaitlistCount();
+
 // Allow Enter key on email inputs
 document.querySelectorAll('.email-input').forEach(input => {
     input.addEventListener('keydown', e => {

@@ -200,7 +200,7 @@ nav.scrolled {
 .hero-headline {
     font-family: 'DM Serif Display', serif;
     font-size: clamp(52px, 7vw, 96px);
-    line-height: 1.0;
+    line-height: 1.15;
     letter-spacing: -2px;
     max-width: 900px;
     margin-bottom: 32px;
@@ -311,6 +311,13 @@ nav.scrolled {
     font-size: 11px;
     color: var(--muted);
 }
+.waitlist-count {
+    margin-top: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--accent2);
+    letter-spacing: 0.5px;
+}
 .success-msg {
     display: none;
     font-family: 'IBM Plex Mono', monospace;
@@ -377,7 +384,7 @@ section { padding: 120px 48px; }
 .problem-headline {
     font-family: 'DM Serif Display', serif;
     font-size: clamp(36px, 4vw, 56px);
-    line-height: 1.1;
+    line-height: 1.15;
     letter-spacing: -1px;
     margin-bottom: 24px;
 }
@@ -450,7 +457,7 @@ section { padding: 120px 48px; }
 .how-headline {
     font-family: 'DM Serif Display', serif;
     font-size: clamp(36px, 4vw, 56px);
-    line-height: 1.1;
+    line-height: 1.15;
     letter-spacing: -1px;
     max-width: 600px;
 }
@@ -550,7 +557,7 @@ section { padding: 120px 48px; }
 .final-headline {
     font-family: 'DM Serif Display', serif;
     font-size: clamp(40px, 6vw, 80px);
-    line-height: 1.05;
+    line-height: 1.15;
     letter-spacing: -2px;
     margin-bottom: 24px;
     position: relative;
