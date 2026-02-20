@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vantagecto.com/sitemap.xml
+Sitemap: https://vantage-cto.com/sitemap.xml
