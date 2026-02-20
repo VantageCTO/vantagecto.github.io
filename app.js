@@ -118,3 +118,20 @@ document.querySelectorAll('.email-input').forEach(input => {
         }
     });
 });
+
+function closeModal() {
+    document.getElementById('math-modal').classList.remove('open');
+}
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeModal();
+});
+// Trap focus inside modal when open
+document.getElementById('math-modal').addEventListener('keydown', function (e) {
+    if (e.key !== 'Tab') return;
+    const focusable = this.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (e.shiftKey ? document.activeElement === first : document.activeElement === last) {
+        e.preventDefault();
+        (e.shiftKey ? last : first).focus();
+    }
+});

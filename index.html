@@ -8,7 +8,7 @@
   <title>VantageCTO — Build Smart. Not Fast.</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;700;800&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <meta property="og:title" content="VantageCTO — Build Smart. Not Fast." />
 <meta property="og:description" content="AI chief technical officer for non-technical founders. Validate your plan, protect your runway." />
@@ -138,7 +138,7 @@
         <div class="burn-label">⚠ Typical Unplanned Startup Burn</div>
         <div class="burn-item">
           <span class="burn-name">Wrong-fit senior developer (6 mo.)</span>
-          <span class="burn-cost">$90K</span>
+          <span class="burn-cost">$91K</span>
         </div>
         <div class="burn-item">
           <span class="burn-name">Overbuild — unused features</span>
@@ -146,24 +146,128 @@
         </div>
         <div class="burn-item">
           <span class="burn-name">Wrong architecture rewrite</span>
-          <span class="burn-cost">$55K</span>
+          <span class="burn-cost">$91K</span>
         </div>
         <div class="burn-item">
-          <span class="burn-name">Delayed pivot (lost time)</span>
-          <span class="burn-cost">$38K</span>
+          <span class="burn-name">Delayed pivot — foregone MRR</span>
+          <span class="burn-cost">$30K</span>
         </div>
         <div class="burn-item">
-          <span class="burn-name">Recruiting & onboarding costs</span>
-          <span class="burn-cost">$20K</span>
+          <span class="burn-name">Recruiting &amp; onboarding costs</span>
+          <span class="burn-cost">$24K</span>
         </div>
         <div class="burn-total">
           <span class="burn-total-label">Total Preventable Burn</span>
-          <span class="burn-total-num">$243K</span>
+          <span class="burn-total-num">$276K</span>
+        </div>
+        <div style="margin-top:20px;text-align:center;">
+          <button onclick="document.getElementById('math-modal').classList.add('open')" class="check-math-btn" aria-haspopup="dialog">
+            Check Our Math ↗
+          </button>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<!-- CHECK OUR MATH MODAL -->
+<div id="math-modal" role="dialog" aria-modal="true" aria-labelledby="math-modal-title" onclick="if(event.target===this)closeModal()">
+  <div class="math-modal-box">
+    <button class="math-close" onclick="closeModal()" aria-label="Close modal">✕</button>
+    <h2 class="math-modal-title" id="math-modal-title">How We Got to $276K</h2>
+    <p class="math-modal-subtitle">// Every line item sourced. Conservative estimates labeled.</p>
+
+    <div class="math-line">
+      <div class="math-line-header">
+        <span class="math-line-name">Wrong-fit senior developer (6 months)</span>
+        <span class="math-line-cost">$91K</span>
+      </div>
+      <div class="math-line-calc">6 mo. salary × 1.4× fully-loaded overhead</div>
+      <div class="math-line-detail">
+        Average US senior developer salary: $130K/yr (<a href="https://www.bls.gov/oes/current/oes151252.htm" target="_blank" rel="noopener noreferrer">BLS OES 15-1252</a>).
+        6 months of base salary = $65K. Fully-loaded cost with benefits, payroll taxes, and equipment runs 1.4× base
+        (<a href="https://8allocate.com/blog/the-hidden-costs-of-hiring-software-developers-in-house/" target="_blank" rel="noopener noreferrer">8allocate</a>) = <strong style="color:var(--fg)">$91K</strong>.
+        Recruiting and onboarding costs for this hire are counted separately below.
+      </div>
+    </div>
+
+    <div class="math-line">
+      <div class="math-line-header">
+        <span class="math-line-name">Overbuild — unused features</span>
+        <span class="math-line-cost">$40K</span>
+      </div>
+      <div class="math-line-calc">64% of avg. $62K build budget × wasted feature rate</div>
+      <div class="math-line-detail">
+        The Standish Group found that
+        <a href="https://agileculture.com/64-percent-unused-software-features/" target="_blank" rel="noopener noreferrer">64% of all software features are rarely or never used</a>.
+        Applied to a modest $62K early-stage build, that's ~$40K in pure engineering waste —
+        before accounting for ongoing maintenance of unused code.
+      </div>
+    </div>
+
+    <div class="math-line">
+      <div class="math-line-header">
+        <span class="math-line-name">Wrong architecture rewrite</span>
+        <span class="math-line-cost">$91K</span>
+      </div>
+      <div class="math-line-calc">2 devs × 3 months × $130K/yr × 1.4× fully-loaded overhead</div>
+      <div class="math-line-detail">
+        Architecture rewrites rarely fall to one person.
+        Two developers spending 3 months rearchitecting a system
+        (a conservative estimate for any meaningful rewrite) at
+        <a href="https://www.bls.gov/oes/current/oes151252.htm" target="_blank" rel="noopener noreferrer">BLS average senior dev salary of $130K/yr</a>,
+        fully loaded at 1.4× (<a href="https://8allocate.com/blog/the-hidden-costs-of-hiring-software-developers-in-house/" target="_blank" rel="noopener noreferrer">8allocate</a>)
+        = $15,167/mo × 2 devs × 3 mo. = <strong style="color:var(--fg)">$91K</strong>.
+        Does not include product delays or lost sprint velocity.
+      </div>
+    </div>
+
+    <div class="math-line">
+      <div class="math-line-header">
+        <span class="math-line-name">Delayed pivot — foregone MRR</span>
+        <span class="math-line-cost">$30K</span>
+      </div>
+      <div class="math-line-calc">6 months × $5K/mo early MRR — opportunity cost estimate</div>
+      <div class="math-line-detail">
+        The <a href="https://startupgenome.com/" target="_blank" rel="noopener noreferrer">Startup Genome Project</a> found
+        that startups pivoting 1–2 times raise 2.5× more capital and show 3.6× better user growth than those
+        that never pivot. Every month a necessary pivot is delayed has compounding downstream cost.
+        $5K/mo is a deliberately conservative early MRR target — this figure is an
+        <strong style="color:var(--fg)">opportunity cost estimate, not a cited statistic</strong>.
+        Real-world cost is typically higher.
+      </div>
+    </div>
+
+    <div class="math-line">
+      <div class="math-line-header">
+        <span class="math-line-name">Recruiting &amp; onboarding costs</span>
+        <span class="math-line-cost">$24K</span>
+      </div>
+      <div class="math-line-calc">External recruiter fee (15% of $130K) + onboarding overhead</div>
+      <div class="math-line-detail">
+        <a href="https://www.shrm.org/" target="_blank" rel="noopener noreferrer">SHRM data</a> puts average cost-per-hire at $4,700,
+        but for senior technical roles using external recruiters (15–20% of salary),
+        fees alone reach $19,500–$26,000.
+        Combined with onboarding overhead ($4,100 average per
+        <a href="https://decode.agency/article/hidden-costs-hiring-in-house-developers/" target="_blank" rel="noopener noreferrer">DECODE</a>),
+        $24K reflects a single senior hire at the conservative end — and the wrong-fit scenario above
+        implies at least two hire cycles.
+      </div>
+    </div>
+
+    <div class="math-total-row">
+      <span class="math-total-label">Total Preventable Burn</span>
+      <span class="math-total-num">$276K</span>
+    </div>
+
+    <p class="math-disclaimer">
+      All figures represent conservative estimates for a typical early-stage US tech startup with 1–3 developers.
+      Actual costs vary by team size, location, and sector. Where a figure is an estimate rather than a
+      directly cited statistic, it is labeled as such above. Source links open in a new tab.
+    </p>
+  </div>
+</div>
+
 
 <!-- HOW IT WORKS -->
 <section style="padding: 120px 48px;">
