@@ -17,7 +17,7 @@ html { scroll-behavior: smooth; }
 body {
     background: var(--bg);
     color: var(--text);
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
     cursor: none;
@@ -54,7 +54,7 @@ body {
     background: var(--accent);
     color: var(--bg);
     padding: 10px 20px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 700;
     font-size: 14px;
     z-index: 9999;
@@ -133,9 +133,9 @@ nav.scrolled {
     border-color: var(--border);
 }
 .logo {
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
     letter-spacing: -0.5px;
     color: var(--text);
     text-decoration: none;
@@ -285,7 +285,7 @@ nav.scrolled {
     border: none;
     outline: none;
     padding: 18px 24px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 14px;
     color: var(--text);
     caret-color: var(--accent);
@@ -296,9 +296,9 @@ nav.scrolled {
     color: var(--bg);
     border: none;
     padding: 18px 28px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     cursor: none;
@@ -733,7 +733,7 @@ footer a { color: var(--accent); text-decoration: none; }
     margin-bottom: 8px;
 }
 .math-line-name {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: var(--fg);
@@ -752,7 +752,7 @@ footer a { color: var(--accent); text-decoration: none; }
     margin-bottom: 6px;
 }
 .math-line-detail {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 12px;
     color: var(--muted);
     line-height: 1.6;
