@@ -481,12 +481,12 @@ section { padding: 120px 48px; }
     font-family: 'IBM Plex Mono', monospace;
     font-size: 72px;
     font-weight: 300;
-    color: var(--border);
+    color: #4a6a82;
     line-height: 1;
     margin-bottom: 24px;
     transition: color 0.3s;
 }
-.step:hover .step-num { color: var(--surface2); }
+.step:hover .step-num { color: #3d5a73; }
 .step-title {
     font-size: 18px;
     font-weight: 700;
