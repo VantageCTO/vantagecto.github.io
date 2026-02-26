@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en" class="blog-page">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VantageCTO — Data Use Agreement" />
+  <meta name="theme-color" content="#080c10" />
+  <title>VantageCTO — Data Use Agreement</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@400;500;700;800&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="canonical" href="https://vantage-cto.com/data-usage/" />
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    /* Legal document overrides — readable on dark background */
+    body {
+      cursor: auto;
+    }
+    body::before {
+      display: none;
+    }
+
+    .legal-page {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 140px 48px 80px;
+    }
+
+    /* Header */
+    .doc-header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 28px;
+      margin-bottom: 48px;
+    }
+    .doc-header .company {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 400;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .doc-header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+    .doc-meta {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    .doc-meta strong {
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 48px;
+    }
+    .section-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section h3 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 28px;
+      margin-bottom: 12px;
+    }
+
+    /* Body text */
+    p {
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      line-height: 1.85;
+      color: #c0c8d0;
+      margin-bottom: 14px;
+      text-align: left;
+    }
+    p strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+    p em {
+      color: var(--accent);
+    }
+    p code {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      background: var(--surface2);
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    /* Lists */
+    ol, ul {
+      margin: 12px 0 18px 28px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 15px;
+      line-height: 1.85;
+      color: #c0c8d0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    li::marker {
+      color: var(--accent);
+    }
+    li strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 24px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+    }
+    table th, table td {
+      border: 1px solid var(--border);
+      padding: 12px 16px;
+      text-align: left;
+      vertical-align: top;
+      color: #c0c8d0;
+    }
+    table th {
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 400;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      background: var(--surface);
+    }
+    table td strong {
+      color: var(--text);
+    }
+
+    /* Callout */
+    .callout {
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      padding: 18px 24px;
+      margin: 20px 0;
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      line-height: 1.8;
+      color: #c0c8d0;
+    }
+    .callout strong {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    /* Footer */
+    .doc-footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 2px solid var(--accent);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+    .doc-footer strong {
+      color: var(--text);
+      font-weight: 400;
+    }
+
+    /* Back link */
+    .legal-back {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--accent);
+      text-decoration: none;
+      letter-spacing: 1px;
+      margin-bottom: 32px;
+      display: inline-block;
+    }
+    .legal-back:hover {
+      color: #33cfff;
+    }
+
+    /* Links in body */
+    .section a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* Print */
+    @media print {
+      body { background: #fff; color: #1a1a1a; }
+      .legal-page { padding: 20px; max-width: 100%; }
+      p, li, td { color: #333; }
+      .doc-header { border-color: #1a1a1a; }
+      .doc-footer { border-color: #1a1a1a; }
+      nav, .legal-back { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      .legal-page { padding: 120px 24px 60px; }
+      table { font-size: 13px; }
+      table th, table td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar" class="scrolled" aria-label="Main navigation">
+  <a class="logo" href="/">Vantage<span>CTO</span></a>
+  <div style="display:flex;align-items:center;gap:24px;">
+    <a class="nav-cta" href="/#waitlist">Join Waitlist</a>
+  </div>
+</nav>
+
+<main>
+<div class="legal-page">
+  <a href="/" class="legal-back">&larr; Back to Home</a>
+
+<!-- ============================================================ -->
+  <!--  HEADER                                                       -->
+  <!-- ============================================================ -->
+  <header class="doc-header">
+    <div class="company">VantageCTO</div>
+    <h1>Data Use Agreement</h1>
+    <div class="doc-meta">
+      <strong>Effective Date:</strong> ________________, 2026<br>
+      <strong>Last Updated:</strong> February 23, 2026<br>
+      <strong>Version:</strong> 1.0<br>
+      <strong>Agreement Type:</strong> Data Processing and Use Agreement<br>
+      <strong>Governing Law:</strong> State of Ohio, United States
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!--  RECITALS                                                     -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Recitals</div>
+    <h2>Parties and Background</h2>
+    <p>
+      This Data Use Agreement (<strong>"Agreement"</strong>) is entered into as of the Effective Date set forth above by and between:
+    </p>
+    <p style="margin-left: 20px;">
+      <strong>SeraphDev LLC, d/b/a VantageCTO</strong>, a limited liability company organized under the laws of the State of Ohio, with its principal place of business in Columbus, Ohio (<strong>"VantageCTO,"</strong> <strong>"Company,"</strong> <strong>"we,"</strong> <strong>"us,"</strong> or <strong>"our"</strong>);
+    </p>
+    <p style="margin-left: 20px; margin-bottom: 20px;">
+      and
+    </p>
+    <p style="margin-left: 20px;">
+      The individual or entity that registers for, subscribes to, or otherwise accesses and uses the VantageCTO Platform (<strong>"User,"</strong> <strong>"you,"</strong> or <strong>"your"</strong>).
+    </p>
+
+    <p><strong>WHEREAS,</strong> VantageCTO operates an AI-powered virtual Chief Technology Officer platform that provides non-technical startup founders and early-stage teams with strategic technical advisory services, persistent business context management, Lean Startup methodology scaffolding, and autonomous build agent capabilities;</p>
+
+    <p><strong>WHEREAS,</strong> in the course of providing the Services, VantageCTO collects, processes, and stores User-provided business intelligence and personal data within a structured Context Graph that persists across sessions and forms the core value proposition of the Platform;</p>
+
+    <p><strong>WHEREAS,</strong> the Platform operates under a Bring Your Own Large Language Model (<strong>"BYOLLM"</strong>) architecture in which Users may connect their own third-party LLM clients to VantageCTO's Model Context Protocol (<strong>"MCP"</strong>) server, creating a data processing relationship that spans multiple parties;</p>
+
+    <p><strong>WHEREAS,</strong> the Parties wish to establish clear terms governing the ownership, use, processing, protection, and disposition of data exchanged through the Platform;</p>
+
+    <p><strong>NOW, THEREFORE,</strong> in consideration of the mutual covenants and agreements herein contained, and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the Parties agree as follows:</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE I — DEFINITIONS                                     -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article I</div>
+    <h2>Definitions</h2>
+    <p>Capitalized terms used in this Agreement shall have the meanings ascribed to them in the VantageCTO Privacy Policy (incorporated herein by reference) and as further defined below:</p>
+
+    <ol>
+      <li><strong>"Agreement"</strong> means this Data Use Agreement, including all exhibits, schedules, and amendments thereto.</li>
+      <li><strong>"Authorized Users"</strong> means the individuals whom User has authorized to access the Platform under User's account, including founders, team members, and developers with Dev Mode access.</li>
+      <li><strong>"Build Agent Output"</strong> means any code, configuration files, test scripts, pull requests, deployment artifacts, or other technical deliverables generated by VantageCTO's autonomous Build Agent on behalf of the User.</li>
+      <li><strong>"Confidential Information"</strong> means all non-public information disclosed by either Party to the other, whether orally, in writing, or through the Platform, that is designated as confidential or that reasonably should be understood to be confidential given the nature of the information and the circumstances of disclosure. Confidential Information includes, without limitation, Business Context Data, trade secrets, business plans, financial information, technical specifications, and proprietary methodologies.</li>
+      <li><strong>"Context Graph"</strong> has the meaning set forth in the Privacy Policy and additionally encompasses all structured entities, relationships, metadata, and derived insights stored within VantageCTO's graph database infrastructure on behalf of the User.</li>
+      <li><strong>"Data Breach"</strong> means any unauthorized access, acquisition, use, or disclosure of Personal Information or Business Context Data that compromises the security, confidentiality, or integrity of such data.</li>
+      <li><strong>"De-Identified Data"</strong> means data that has been processed such that it cannot reasonably be used to identify, relate to, describe, be associated with, or be linked, directly or indirectly, to any particular User, natural person, or specific business entity, and for which VantageCTO has implemented technical safeguards and business processes to prevent re-identification.</li>
+      <li><strong>"Derived Insights"</strong> means aggregate, statistical, or analytical information derived from User data that has been fully de-identified and cannot be attributed to or used to identify any individual User, their business, or their Confidential Information.</li>
+      <li><strong>"MCP Tool Call"</strong> means a structured request transmitted from a User's LLM client to VantageCTO's MCP Server via the Model Context Protocol, including the tool name, input parameters, and any associated metadata.</li>
+      <li><strong>"Platform"</strong> means the VantageCTO website, MCP Server, native applications, APIs, Build Agent, and all related tools, features, and integrations.</li>
+      <li><strong>"Services"</strong> means all services provided by VantageCTO through the Platform, including the Think It (Phase 01), Validate It (Phase 02), and Build It (Phase 03) service phases.</li>
+      <li><strong>"Service Tier"</strong> means the level of Platform access subscribed to by the User, including Context ($49/month), Co-Founder ($149/month), Studio ($349/month), and Dev Mode, as such tiers may be updated from time to time.</li>
+      <li><strong>"Sub-Processor"</strong> means any third-party entity engaged by VantageCTO to process User data in connection with the Services.</li>
+    </ol>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE II — DATA OWNERSHIP                                 -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article II</div>
+    <h2>Data Ownership and Intellectual Property</h2>
+
+    <h3>2.1 User Data Ownership</h3>
+    <p>
+      <strong>User retains all right, title, and interest in and to all Business Context Data, including all intellectual property rights therein.</strong> Nothing in this Agreement transfers ownership of User's data to VantageCTO. The business intelligence, strategic decisions, assumptions, experiments, validated learnings, problem statements, ideal customer profiles, and all other information you provide to the Platform remain your property.
+    </p>
+
+    <h3>2.2 Limited License to VantageCTO</h3>
+    <p>
+      By using the Platform, User grants VantageCTO a limited, non-exclusive, non-transferable, revocable license to collect, store, process, and display User's Business Context Data and Personal Information solely for the following purposes:
+    </p>
+    <ol type="a">
+      <li>To provide, operate, maintain, and improve the Services as described in this Agreement and the Privacy Policy;</li>
+      <li>To construct, maintain, and query the User's Context Graph;</li>
+      <li>To execute MCP tool calls and return results;</li>
+      <li>To operate the Build Agent and generate Build Agent Output on User's behalf (for applicable tiers);</li>
+      <li>To provide Dev Mode read access to Authorized Users;</li>
+      <li>To comply with applicable legal obligations.</li>
+    </ol>
+    <p>This license terminates upon deletion of User's account and data, subject to the retention periods set forth in the Privacy Policy.</p>
+
+    <h3>2.3 Build Agent Output Ownership</h3>
+    <p>
+      All Build Agent Output — including generated code, test scripts, configuration files, GitHub pull requests, and deployment artifacts — is owned by the User. VantageCTO claims no intellectual property rights in Build Agent Output. User is solely responsible for reviewing, testing, and deploying Build Agent Output and assumes all risk associated with its use in production environments.
+    </p>
+
+    <h3>2.4 VantageCTO Platform IP</h3>
+    <p>
+      VantageCTO retains all right, title, and interest in and to the Platform, including its software, algorithms, MCP tool interfaces, system prompts, methodology frameworks (including the Think It → Validate It → Build It progression), user interface designs, documentation, and all related intellectual property. Nothing in this Agreement grants User any rights in VantageCTO's proprietary technology except the limited right to use the Platform as a subscriber.
+    </p>
+
+    <h3>2.5 Derived Insights</h3>
+    <p>
+      VantageCTO may create Derived Insights from User data, provided that such insights are fully de-identified and aggregated such that they cannot be attributed to any individual User or specific business. VantageCTO owns such Derived Insights and may use them for Platform improvement, public content (e.g., methodology blog posts, aggregate statistics about founder behavior patterns), and product development. <strong>At no time will Derived Insights contain or reveal User's Confidential Information, proprietary business details, or individually identifiable data.</strong>
+    </p>
+
+    <h3>2.6 No Implied Licenses</h3>
+    <p>Except as expressly set forth in this Agreement, neither Party grants the other any license, right, or interest in its intellectual property, data, or Confidential Information.</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE III — DATA PROCESSING TERMS                         -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article III</div>
+    <h2>Data Processing Terms</h2>
+
+    <h3>3.1 Roles of the Parties</h3>
+    <p>For purposes of applicable data protection laws:</p>
+    <ol type="a">
+      <li><strong>User as Controller:</strong> With respect to Personal Information and Business Context Data that User provides to the Platform, User is the data controller (or equivalent designation under applicable law). User determines the purposes and means of processing their data by choosing to use the Platform and by directing which data to store through MCP tool calls and direct input.</li>
+      <li><strong>VantageCTO as Processor:</strong> With respect to User-provided data, VantageCTO acts as a data processor (or equivalent designation), processing data on behalf of User and in accordance with User's instructions as expressed through Platform usage, this Agreement, and the Privacy Policy.</li>
+      <li><strong>VantageCTO as Controller:</strong> With respect to account management data, billing data, aggregate analytics, and data collected for VantageCTO's own operational purposes, VantageCTO acts as an independent data controller.</li>
+    </ol>
+
+    <h3>3.2 Processing Instructions</h3>
+    <p>VantageCTO shall process User data only in accordance with:</p>
+    <ol type="a">
+      <li>This Agreement and the Privacy Policy;</li>
+      <li>User's documented instructions as expressed through Platform usage (including MCP tool calls, dashboard inputs, and integration configurations);</li>
+      <li>Applicable data protection laws.</li>
+    </ol>
+    <p>If VantageCTO believes that an instruction from User infringes applicable data protection law, VantageCTO will promptly inform User and may suspend the relevant processing until User provides revised instructions.</p>
+
+    <h3>3.3 BYOLLM Data Processing Responsibilities</h3>
+    <p>The BYOLLM architecture creates a shared data processing environment. The Parties acknowledge and agree to the following allocation of responsibilities:</p>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:30%">Data Element</th>
+          <th style="width:35%">Responsible Party</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Full conversational text between User and LLM</td>
+          <td>User's LLM Provider (e.g., Anthropic, OpenAI)</td>
+          <td>VantageCTO does not receive or process this data unless it is included in an MCP tool call.</td>
+        </tr>
+        <tr>
+          <td>MCP tool call parameters and responses</td>
+          <td>VantageCTO</td>
+          <td>Processed and stored in User's Context Graph per this Agreement.</td>
+        </tr>
+        <tr>
+          <td>LLM inference and model outputs</td>
+          <td>User's LLM Provider</td>
+          <td>Subject to User's agreement with their LLM provider.</td>
+        </tr>
+        <tr>
+          <td>Context Graph data (entities, relationships)</td>
+          <td>VantageCTO (as Processor)</td>
+          <td>Owned by User; processed and stored by VantageCTO.</td>
+        </tr>
+        <tr>
+          <td>Hosted LLM conversational data</td>
+          <td>VantageCTO</td>
+          <td>Applicable only to tiers with VantageCTO-hosted LLM. Subject to all protections in this Agreement.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <strong>User Responsibility:</strong> User is solely responsible for reviewing and accepting the privacy policies and terms of service of any third-party LLM provider they connect to VantageCTO. VantageCTO is not liable for data processing performed by User's chosen LLM provider outside of VantageCTO's MCP Server infrastructure.
+    </div>
+
+    <h3>3.4 Third-Party Integration Data Processing</h3>
+    <p>When User authorizes third-party integrations (including but not limited to GitHub, Linear, Notion, Vercel, and Railway), the following terms apply:</p>
+    <ol type="a">
+      <li>VantageCTO will access and process data from third-party services only to the extent necessary to provide the requested integration functionality.</li>
+      <li>Authentication credentials for third-party services are encrypted at rest and in transit, stored separately from other User data, and deleted immediately upon disconnection of the integration or termination of User's account.</li>
+      <li>VantageCTO does not access, read, or store data from third-party services beyond what is required for the specific integration function authorized by User.</li>
+      <li>User is responsible for ensuring they have the authority to connect third-party services to VantageCTO and that such connection complies with the third party's terms of service.</li>
+    </ol>
+
+    <h3>3.5 Sub-Processing</h3>
+    <p>User authorizes VantageCTO to engage Sub-Processors to assist in providing the Services, subject to the following conditions:</p>
+    <ol type="a">
+      <li>VantageCTO maintains a list of current Sub-Processors, available upon request to <em>privacy@vantage-cto.com</em>.</li>
+      <li>VantageCTO will impose data protection obligations on Sub-Processors that are no less protective than those set forth in this Agreement.</li>
+      <li>VantageCTO will provide User with at least thirty (30) days' notice before engaging a new Sub-Processor. If User objects to a new Sub-Processor on reasonable grounds related to data protection, the Parties will work in good faith to resolve the objection. If no resolution is reached, User may terminate the affected Services.</li>
+      <li>VantageCTO remains fully liable to User for the performance of its Sub-Processors.</li>
+    </ol>
+
+    <h3>3.6 Data Minimization</h3>
+    <p>VantageCTO adheres to the principle of data minimization. We collect and process only the data reasonably necessary to provide the Services. The MCP tool interface is designed such that only the structured parameters of each tool call are transmitted to our servers — not the full conversational context of the User's LLM session.</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE IV — PERMITTED AND PROHIBITED USES                  -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article IV</div>
+    <h2>Permitted and Prohibited Uses</h2>
+
+    <h3>4.1 Permitted Uses by VantageCTO</h3>
+    <p>VantageCTO may use User data exclusively for the following purposes:</p>
+    <ol type="a">
+      <li>Providing, operating, and maintaining the Services as described in this Agreement;</li>
+      <li>Responding to MCP tool calls and maintaining the Context Graph;</li>
+      <li>Operating the Build Agent and generating Build Agent Output;</li>
+      <li>Providing customer support and responding to User inquiries;</li>
+      <li>Generating De-Identified Data and Derived Insights as defined in Article II;</li>
+      <li>Ensuring Platform security, preventing fraud, and detecting abuse;</li>
+      <li>Complying with applicable legal obligations;</li>
+      <li>Communicating with User regarding the Services (including transactional notifications, security alerts, and, with consent, product updates).</li>
+    </ol>
+
+    <h3>4.2 Prohibited Uses by VantageCTO</h3>
+    <p>VantageCTO shall NOT:</p>
+    <ol type="a">
+      <li><strong>Sell User data</strong> to any third party for any purpose;</li>
+      <li><strong>Use Business Context Data to train general-purpose AI models,</strong> whether owned by VantageCTO or third parties, without explicit prior written consent from User;</li>
+      <li><strong>Share User's Context Graph data</strong> with other Users, tenants, or third parties, except as expressly authorized by User or required by law;</li>
+      <li><strong>Access, use, or disclose User data</strong> for purposes unrelated to providing the Services;</li>
+      <li><strong>Combine User's individually identifiable data</strong> with data from other Users for commercial purposes;</li>
+      <li><strong>Use User's business intelligence</strong> to compete with User, advise User's competitors, or derive unfair commercial advantage;</li>
+      <li><strong>Retain User data beyond the retention periods</strong> specified in the Privacy Policy, except as required by applicable law;</li>
+      <li><strong>Process User data in a manner</strong> that is incompatible with the purposes stated in this Agreement without obtaining User's prior consent.</li>
+    </ol>
+
+    <h3>4.3 User Representations and Responsibilities</h3>
+    <p>User represents, warrants, and agrees that:</p>
+    <ol type="a">
+      <li>User has the legal authority to provide the data submitted to the Platform and to authorize its processing as described in this Agreement;</li>
+      <li>User will not submit to the Platform any data that User does not have the right to share, including personally identifiable information of third parties without their consent, data subject to legal privilege, or data restricted by contractual obligations that would prohibit its processing by VantageCTO;</li>
+      <li>User is responsible for the accuracy and legality of the data provided to the Platform;</li>
+      <li>User will comply with applicable data protection laws in connection with their use of the Platform;</li>
+      <li>User will maintain appropriate security measures for their account credentials, LLM API keys, and third-party integration tokens;</li>
+      <li>User will promptly notify VantageCTO of any unauthorized access to their account or suspected Data Breach.</li>
+    </ol>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE V — CONFIDENTIALITY                                 -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article V</div>
+    <h2>Confidentiality</h2>
+
+    <h3>5.1 Confidentiality Obligations</h3>
+    <p>Each Party agrees to:</p>
+    <ol type="a">
+      <li>Hold the other Party's Confidential Information in strict confidence;</li>
+      <li>Not disclose Confidential Information to any third party except as expressly permitted by this Agreement, the Privacy Policy, or with the disclosing Party's prior written consent;</li>
+      <li>Use Confidential Information only for the purposes of performing obligations or exercising rights under this Agreement;</li>
+      <li>Protect Confidential Information with at least the same degree of care used to protect its own confidential information, but in no event less than reasonable care.</li>
+    </ol>
+
+    <h3>5.2 Exceptions</h3>
+    <p>The confidentiality obligations in this Article do not apply to information that:</p>
+    <ol type="a">
+      <li>Is or becomes publicly available through no fault of the receiving Party;</li>
+      <li>Was rightfully in the receiving Party's possession before disclosure;</li>
+      <li>Is independently developed by the receiving Party without use of or reference to the disclosing Party's Confidential Information;</li>
+      <li>Is rightfully received from a third party without restriction on disclosure;</li>
+      <li>Is required to be disclosed by applicable law, regulation, or court order, provided that the receiving Party gives the disclosing Party prompt written notice (to the extent legally permitted) to allow the disclosing Party to seek protective measures.</li>
+    </ol>
+
+    <h3>5.3 Business Context Data as Confidential Information</h3>
+    <p>
+      The Parties specifically acknowledge that User's Business Context Data — including but not limited to business strategies, financial projections, market analyses, product specifications, competitive intelligence, hiring plans, and validated learnings — constitutes Confidential Information of the highest sensitivity. VantageCTO shall treat all Business Context Data as Confidential Information regardless of whether it is expressly marked or designated as such by User.
+    </p>
+
+    <h3>5.4 Survival</h3>
+    <p>The confidentiality obligations in this Article shall survive termination of this Agreement for a period of three (3) years, except with respect to trade secrets, for which confidentiality obligations shall survive for as long as the information qualifies as a trade secret under applicable law.</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE VI — DATA SECURITY                                  -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article VI</div>
+    <h2>Data Security</h2>
+
+    <h3>6.1 Security Measures</h3>
+    <p>VantageCTO shall implement and maintain appropriate technical and organizational security measures to protect User data against unauthorized access, alteration, disclosure, or destruction. These measures shall include, at a minimum:</p>
+    <ol type="a">
+      <li>Encryption of data in transit (TLS 1.2 or higher) and sensitive data at rest (AES-256 or equivalent);</li>
+      <li>Logical tenant isolation within the multi-tenant Platform architecture;</li>
+      <li>Role-based access controls with multi-factor authentication for production systems;</li>
+      <li>Regular security assessments, vulnerability scanning, and penetration testing;</li>
+      <li>Employee security awareness training and background checks for personnel with access to User data;</li>
+      <li>Secure development practices, including code review and dependency monitoring;</li>
+      <li>Backup and disaster recovery procedures;</li>
+      <li>Logging and monitoring of access to User data and production systems.</li>
+    </ol>
+
+    <h3>6.2 Data Breach Notification</h3>
+    <p>In the event of a Data Breach affecting User's data, VantageCTO shall:</p>
+    <ol type="a">
+      <li>Notify User without undue delay, and in any event within seventy-two (72) hours of becoming aware of the breach;</li>
+      <li>Provide User with sufficient information to understand the nature and scope of the breach, including the categories and approximate number of data records affected;</li>
+      <li>Take immediate steps to contain and remediate the breach;</li>
+      <li>Cooperate with User in investigating the breach and fulfilling any notification obligations User may have under applicable law;</li>
+      <li>Provide User with ongoing updates regarding the breach investigation and remediation efforts.</li>
+    </ol>
+
+    <h3>6.3 Audit Rights</h3>
+    <p>Upon reasonable written request (not more than once per twelve-month period), VantageCTO shall provide User with evidence of its compliance with the security measures described in this Agreement. Such evidence may include SOC 2 reports, third-party audit reports, security certifications, or responses to standardized security questionnaires. VantageCTO shall not be required to disclose specific details of its security architecture that could compromise the security of the Platform or other Users.</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE VII — DATA RETENTION AND DELETION                   -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article VII</div>
+    <h2>Data Retention, Export, and Deletion</h2>
+
+    <h3>7.1 Retention Periods</h3>
+    <p>Data retention periods are governed by the Privacy Policy and summarized in Article VII of this Agreement. VantageCTO shall not retain User data beyond the periods specified unless required by applicable law or expressly authorized by User.</p>
+
+    <h3>7.2 Data Export</h3>
+    <p>User may request a full export of their Context Graph data at any time during their active subscription and for ninety (90) days following account cancellation or termination. Exports shall be provided in a structured, machine-readable format (JSON and/or CSV) within a reasonable timeframe, not to exceed fifteen (15) business days from the date of request.</p>
+
+    <h3>7.3 Data Deletion</h3>
+    <ol type="a">
+      <li><strong>Upon Account Deletion:</strong> When User deletes their account, VantageCTO shall permanently delete or irreversibly anonymize all User data within thirty (30) days, except for data that VantageCTO is required to retain under applicable law (e.g., billing records for tax purposes) and De-Identified Data that has been incorporated into Derived Insights prior to the deletion request.</li>
+      <li><strong>Upon Subscription Cancellation:</strong> Context Graph data shall be retained for ninety (90) days following cancellation to allow for data export and resubscription. After the 90-day grace period, Context Graph data shall be permanently deleted.</li>
+      <li><strong>Targeted Deletion:</strong> User may request deletion of specific data elements within their Context Graph (e.g., individual assumptions, decisions, or experiments) at any time through Platform tools or by contacting VantageCTO support. Such requests shall be fulfilled within a reasonable timeframe.</li>
+      <li><strong>Certification of Deletion:</strong> Upon request, VantageCTO shall provide written confirmation that User data has been deleted in accordance with this Agreement.</li>
+    </ol>
+
+    <h3>7.4 Return of Third-Party Credentials</h3>
+    <p>Upon disconnection of any third-party integration or termination of User's account, VantageCTO shall immediately and permanently delete all stored authentication tokens, API keys, and credentials associated with that integration. VantageCTO shall provide confirmation of such deletion upon request.</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE VIII — AI-SPECIFIC TERMS                            -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article VIII</div>
+    <h2>AI-Specific Terms</h2>
+
+    <h3>8.1 No Training on User Data</h3>
+    <p>VantageCTO shall not use User's Business Context Data, conversational data, or any individually identifiable information to train, fine-tune, or improve any general-purpose artificial intelligence or machine learning model, whether owned by VantageCTO or a third party, without obtaining User's express prior written consent.</p>
+
+    <h3>8.2 De-Identified Improvement</h3>
+    <p>VantageCTO may use De-Identified Data and Derived Insights to improve the Platform's methodology, prompts, tool design, and feature set. Such improvement shall not reveal, reconstruct, or enable inference of any User's individually identifiable information or proprietary business data.</p>
+
+    <h3>8.3 AI Output Disclaimer</h3>
+    <p>AI-generated outputs provided through the Platform — including strategic recommendations, methodology guidance, Technical Readiness Reports, and Build Agent Output — are produced by probabilistic language models and are provided for informational and decision-support purposes only. VantageCTO does not guarantee the accuracy, completeness, legal sufficiency, or fitness for any particular purpose of any AI-generated output. User is solely responsible for independently evaluating and acting upon AI-generated recommendations.</p>
+
+    <h3>8.4 Sequencing Gate Disclosure</h3>
+    <p>The Platform enforces a methodological sequencing gate that requires completion of prior phases before accessing subsequent phases (e.g., Build It requires validated Phase 01 and Phase 02 context). This automated gate affects service availability and is a core design feature of the VantageCTO methodology. User acknowledges and accepts this gate as a condition of using the Services.</p>
+
+    <h3>8.5 Build Agent Specific Terms</h3>
+    <p>For Users subscribed to the Build It tier, the following additional terms apply:</p>
+    <ol type="a">
+      <li><strong>Scope of Agent Actions:</strong> The Build Agent may write code, execute Playwright browser tests, generate GitHub pull requests, and deploy to platforms such as Vercel or Railway, but only within the scope authorized by User through their validated business context and explicit configuration.</li>
+      <li><strong>User Review Required:</strong> The Build Agent proposes changes; User controls the merge. VantageCTO strongly recommends that User (or their designated developer) review all Build Agent Output before merging or deploying to production.</li>
+      <li><strong>No Warranty of Code Quality:</strong> Build Agent Output is provided "as-is." VantageCTO does not warrant that generated code is free from bugs, security vulnerabilities, or functional defects. User assumes all risk associated with using Build Agent Output in production environments.</li>
+      <li><strong>Resource Limits:</strong> Build cycles are subject to the limits of User's Service Tier. Overage charges may apply as specified in the applicable pricing schedule.</li>
+    </ol>
+
+    <h3>8.6 Transparency</h3>
+    <p>VantageCTO is committed to transparency regarding its use of AI. The Platform is designed to produce outputs in plain language readable by non-technical founders. If User has questions about how AI is used in connection with their data, they may contact VantageCTO at <em>privacy@vantage-cto.com</em> for a detailed explanation.</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE IX — COMPLIANCE AND REGULATORY                      -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article IX</div>
+    <h2>Compliance and Regulatory Matters</h2>
+
+    <h3>9.1 Data Protection Cooperation</h3>
+    <p>VantageCTO shall provide reasonable assistance to User in fulfilling User's obligations under applicable data protection laws, including responding to data subject access requests (DSARs), conducting data protection impact assessments, and cooperating with supervisory authorities.</p>
+
+    <h3>9.2 International Data Transfers</h3>
+    <p>Where User data is transferred to jurisdictions other than the jurisdiction in which it was collected, VantageCTO shall implement appropriate safeguards as required by applicable law, including Standard Contractual Clauses (SCCs), data processing addenda, and transfer impact assessments where required.</p>
+
+    <h3>9.3 Applicable Laws</h3>
+    <p>This Agreement is designed to comply with, and shall be interpreted in a manner consistent with, applicable data protection laws, including but not limited to:</p>
+    <ol type="a">
+      <li>The California Consumer Privacy Act, as amended by the California Privacy Rights Act (CCPA/CPRA);</li>
+      <li>The General Data Protection Regulation (GDPR), where applicable;</li>
+      <li>The Ohio Data Privacy Act, when effective;</li>
+      <li>Other U.S. state privacy laws applicable to VantageCTO's operations;</li>
+      <li>The EU AI Act, to the extent applicable to VantageCTO's AI processing activities.</li>
+    </ol>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE X — LIMITATION OF LIABILITY                         -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article X</div>
+    <h2>Limitation of Liability</h2>
+
+    <h3>10.1 Disclaimer of Warranties</h3>
+    <p>
+      EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PLATFORM AND SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+    </p>
+
+    <h3>10.2 Limitation of Liability</h3>
+    <p>
+      TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL VANTAGECTO'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THIS AGREEMENT EXCEED THE AMOUNTS PAID BY USER TO VANTAGECTO IN THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM. IN NO EVENT SHALL VANTAGECTO BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION, OR LOSS OF BUSINESS OPPORTUNITY, REGARDLESS OF THE CAUSE OF ACTION OR THE THEORY OF LIABILITY.
+    </p>
+
+    <h3>10.3 Exceptions to Limitation</h3>
+    <p>The limitations set forth in Section 10.2 shall not apply to:</p>
+    <ol type="a">
+      <li>VantageCTO's willful breach of its confidentiality obligations under Article V;</li>
+      <li>VantageCTO's gross negligence or willful misconduct in connection with data security;</li>
+      <li>Liability that cannot be limited under applicable law.</li>
+    </ol>
+
+    <h3>10.4 User Acknowledgment</h3>
+    <p>User acknowledges that VantageCTO is not a substitute for professional legal, financial, or technical advice. User agrees that reliance on AI-generated outputs is at User's own risk and that User should seek independent professional advice for material business, legal, and financial decisions.</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE XI — TERM AND TERMINATION                           -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article XI</div>
+    <h2>Term and Termination</h2>
+
+    <h3>11.1 Term</h3>
+    <p>This Agreement is effective as of the date User first accesses or uses the Platform and continues in effect until terminated in accordance with this Article.</p>
+
+    <h3>11.2 Termination by User</h3>
+    <p>User may terminate this Agreement at any time by canceling their subscription and deleting their account through the Platform, or by contacting VantageCTO support. Upon termination, User's access to the Services will cease, and data retention and deletion will proceed as set forth in Article VII.</p>
+
+    <h3>11.3 Termination by VantageCTO</h3>
+    <p>VantageCTO may terminate this Agreement:</p>
+    <ol type="a">
+      <li>Upon thirty (30) days' written notice for any reason or no reason;</li>
+      <li>Immediately upon written notice if User materially breaches this Agreement and fails to cure such breach within fifteen (15) days of receiving notice;</li>
+      <li>Immediately if User's use of the Platform poses a security risk to the Platform or other Users;</li>
+      <li>Immediately if required by applicable law or a governmental order.</li>
+    </ol>
+
+    <h3>11.4 Effect of Termination</h3>
+    <p>Upon termination:</p>
+    <ol type="a">
+      <li>User's access to the Platform and Services shall cease;</li>
+      <li>User shall have ninety (90) days to request a data export;</li>
+      <li>VantageCTO shall delete User data in accordance with Article VII;</li>
+      <li>All licenses granted under this Agreement shall terminate;</li>
+      <li>Articles II (Data Ownership), V (Confidentiality), VI (Data Security, to the extent applicable to retained data), X (Limitation of Liability), and XII (General Provisions) shall survive termination.</li>
+    </ol>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  ARTICLE XII — GENERAL PROVISIONS                            -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Article XII</div>
+    <h2>General Provisions</h2>
+
+    <h3>12.1 Governing Law</h3>
+    <p>This Agreement shall be governed by and construed in accordance with the laws of the State of Ohio, without regard to its conflict of laws provisions. Any disputes arising out of or related to this Agreement shall be resolved in the state or federal courts located in Franklin County, Ohio, and the Parties consent to the exclusive jurisdiction and venue of such courts.</p>
+
+    <h3>12.2 Dispute Resolution</h3>
+    <p>Before initiating formal legal proceedings, the Parties agree to attempt to resolve any dispute through good-faith negotiation for a period of thirty (30) days. If the dispute is not resolved through negotiation, either Party may pursue binding arbitration administered by the American Arbitration Association under its Commercial Arbitration Rules, or file suit in a court of competent jurisdiction as specified in Section 12.1.</p>
+
+    <h3>12.3 Entire Agreement</h3>
+    <p>This Agreement, together with the Privacy Policy, Terms of Service, and any applicable Order Forms or subscription agreements, constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior and contemporaneous understandings, agreements, representations, and warranties, whether written or oral, with respect to such subject matter.</p>
+
+    <h3>12.4 Amendments</h3>
+    <p>VantageCTO may amend this Agreement by posting an updated version on the Platform and notifying User via email or in-product notice at least thirty (30) days prior to the effective date of the amendment. User's continued use of the Platform after the effective date constitutes acceptance of the amended Agreement. If User does not agree to the amended terms, User may terminate this Agreement as provided in Article XI.</p>
+
+    <h3>12.5 Severability</h3>
+    <p>If any provision of this Agreement is held to be invalid, illegal, or unenforceable, the remaining provisions shall continue in full force and effect. The invalid or unenforceable provision shall be modified to the minimum extent necessary to make it valid and enforceable while preserving the Parties' original intent.</p>
+
+    <h3>12.6 Waiver</h3>
+    <p>No failure or delay by either Party in exercising any right under this Agreement shall constitute a waiver of that right. A waiver of any provision shall not constitute a waiver of any other provision or a continuing waiver.</p>
+
+    <h3>12.7 Assignment</h3>
+    <p>User may not assign this Agreement or any rights or obligations hereunder without VantageCTO's prior written consent. VantageCTO may assign this Agreement in connection with a merger, acquisition, or sale of all or substantially all of its assets, provided that the assignee agrees to be bound by the terms of this Agreement.</p>
+
+    <h3>12.8 Notices</h3>
+    <p>All notices under this Agreement shall be in writing and delivered by email (with confirmation of receipt) or by nationally recognized overnight courier to the addresses specified herein, or to such other address as either Party may designate in writing.</p>
+
+    <h3>12.9 Force Majeure</h3>
+    <p>Neither Party shall be liable for any failure or delay in performing its obligations under this Agreement due to causes beyond its reasonable control, including but not limited to natural disasters, acts of government, epidemic or pandemic, war, terrorism, labor disputes, power failures, Internet disruptions, or acts of third parties.</p>
+
+    <h3>12.10 Relationship of the Parties</h3>
+    <p>Nothing in this Agreement creates a partnership, joint venture, agency, or employment relationship between the Parties. Neither Party has the authority to bind the other or incur obligations on the other's behalf.</p>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  SIGNATURE BLOCK                                              -->
+  <!-- ============================================================ -->
+  <div class="section">
+    <div class="section-num">Execution</div>
+    <h2>Acceptance and Signatures</h2>
+    <p>By creating an account on the VantageCTO Platform, subscribing to a Service Tier, or otherwise accessing or using the Services, User acknowledges that they have read, understood, and agree to be bound by the terms of this Data Use Agreement.</p>
+    <p>For enterprise or custom agreements, the Parties may execute this Agreement below:</p>
+
+    <div class="sig-block">
+      <div class="sig-party">
+        <h4>VantageCTO (SeraphDev LLC)</h4>
+        <div class="sig-line"></div>
+        <div class="sig-label">Signature</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Name and Title</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Date</div>
+      </div>
+      <div class="sig-party">
+        <h4>User</h4>
+        <div class="sig-line"></div>
+        <div class="sig-label">Signature</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Name and Title</div>
+        <div class="sig-line"></div>
+        <div class="sig-label">Date</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!--  FOOTER                                                       -->
+  <!-- ============================================================ -->
+  <div class="doc-footer">
+    <p><strong>VantageCTO Data Use Agreement — Version 1.0</strong></p>
+    <p>© 2026 SeraphDev LLC, d/b/a VantageCTO. All rights reserved.</p>
+    <p style="margin-top: 10px; font-style: italic;">
+      This document has been prepared for review by qualified legal counsel. It is intended to provide a comprehensive foundation for the data use relationship between VantageCTO and its Users but should be reviewed, customized, and approved by a licensed attorney before publication or enforcement.
+    </p>
+  </div>
+
+
+</div>
+</main>
+
+<footer role="contentinfo">
+  <p>&copy; 2026 <a href="/">VantageCTO</a> — All rights reserved.</p>
+  <p>Built with conviction. <span style="color:var(--accent)">// coming soon</span></p>
+</footer>
+
+</body>
+</html>
