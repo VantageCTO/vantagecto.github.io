@@ -51,6 +51,7 @@ POST_TEMPLATE = """\
     <div class="blog-meta">
       <span>{{AUTHOR}}</span>
       <span>{{DATE}}</span>
+      <span id="view-count"></span>
     </div>
   </div>
   <article class="blog-content">
@@ -63,6 +64,19 @@ POST_TEMPLATE = """\
   <p>Built with conviction. <span style="color:var(--accent)">// blog</span></p>
 </footer>
 
+<script>
+(function() {
+  var API = "https://vantage-api.fly.dev";
+  var slug = "{{SLUG}}";
+  fetch(API + "/blog/" + slug + "/view", {method: "POST"})
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+      var el = document.getElementById("view-count");
+      if (el && d.view_count != null) el.textContent = d.view_count + (d.view_count === 1 ? " view" : " views");
+    })
+    .catch(function() {});
+})();
+</script>
 </body>
 </html>
 """
