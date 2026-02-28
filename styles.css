@@ -501,6 +501,99 @@ section { padding: 120px 48px; }
 }
 .step-text { font-size: 14px; color: var(--muted); line-height: 1.7; }
 
+/* DIFFERENTIATOR */
+.diff {
+    background: var(--bg);
+}
+.diff-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.diff-header {
+    margin-bottom: 64px;
+}
+.diff-headline {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(36px, 4vw, 56px);
+    line-height: 1.2;
+    letter-spacing: -1px;
+    max-width: 700px;
+    margin-bottom: 24px;
+}
+.diff-headline em {
+    font-style: italic;
+    color: var(--accent);
+}
+.diff-sub {
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 620px;
+}
+.diff-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+}
+.diff-col {
+    padding: 40px 36px;
+    position: relative;
+}
+.diff-col--generic {
+    background: var(--surface);
+    border-top: 2px solid var(--border);
+}
+.diff-col--vantage {
+    background: var(--surface);
+    border-top: 2px solid var(--accent);
+}
+.diff-col-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+.diff-col--generic .diff-col-label { color: var(--muted); }
+.diff-col--vantage .diff-col-label { color: var(--accent); }
+.diff-col--vantage .diff-col-label span { color: var(--accent); }
+.diff-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.diff-row:last-child { border-bottom: none; }
+.diff-icon {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+    width: 20px;
+    text-align: center;
+    line-height: 1.6;
+}
+.diff-icon--no { color: var(--muted); }
+.diff-icon--yes { color: var(--accent2); }
+.diff-item {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+}
+.diff-col--vantage .diff-item { color: var(--text); }
+.diff-footnote {
+    margin-top: 48px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .diff-grid { grid-template-columns: 1fr; }
+}
+
 /* TESTIMONIALS */
 .quotes {
     background: var(--surface);
